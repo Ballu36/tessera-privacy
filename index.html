@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tessera — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 46rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e8; background: #131315; } a { color: #7fb3ff; } }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  .meta { color: #6b6b70; font-size: .9rem; margin: 0 0 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border: 1px solid #d7d7db; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #3a3a40; } }
+  th { background: rgba(128,128,140,.12); font-weight: 600; }
+  code { font-size: .9em; background: rgba(128,128,140,.15); padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for Tessera</h1>
+<p class="meta">Last updated: 13 September 2026</p>
+
+<p>Tessera (“the Game”, package <code>com.zengothic.tessera</code>) is a single-player tile
+puzzle game published by Zengothic (“we”, “us”). This policy explains what the Game and the
+services inside it handle, and what choices you have.</p>
+
+<p><strong>The short version:</strong> we run no servers, there are no accounts, and we never
+receive any personal information about you. Your progress stays on your phone and is not even
+backed up off it. The Game does show advertisements, and the Google advertising service that
+delivers them collects data as described below.</p>
+
+<h2>1. Information we collect ourselves</h2>
+<p><strong>None.</strong> The Game has no sign-in, no user profiles, no chat, no leaderboards,
+no cloud save and no analytics of our own. We operate no servers, so no information about you
+is ever transmitted to us.</p>
+
+<h2>2. Information stored on your device</h2>
+<p>The Game saves your progress locally, under a single key (<code>tessera_save_v1</code>), so
+you can continue where you left off:</p>
+<ul>
+  <li>Which level you last played</li>
+  <li>Which levels you have completed, your best move count and play count on each</li>
+  <li>How many hints you used per level</li>
+  <li>Which tutorial lines you have already seen</li>
+  <li>Whether sound is on or off, and whether reduced motion is on or off</li>
+</ul>
+<p>That is the complete list. It contains no identifier of any kind — no name, no device id, no
+random id that could follow you.</p>
+<p>Unlike many apps, this data is <strong>not</strong> copied off your device by Android Backup.
+The Game sets <code>allowBackup="false"</code> and excludes itself from device-to-device
+transfer, so the save stays on the phone that made it. Uninstalling the Game deletes it.</p>
+
+<h2>3. Advertising</h2>
+<p>The Game is free and is funded by advertising. We use <strong>Google AdMob</strong> to show
+it. We do not run an ad server and we receive no personal information from it, but Google does
+process data in order to serve and measure ads, including an advertising identifier and general
+information about your device.</p>
+
+<p>What the Game actually shows:</p>
+<table>
+  <tr><th>Format</th><th>When</th></tr>
+  <tr><td>Full-screen ad between levels</td><td>After a number of completed levels, and never less than three minutes apart</td></tr>
+  <tr><td>Optional rewarded ad</td><td>Only if you choose it, from a “Stuck?” offer on a board you have genuinely stalled on</td></tr>
+</table>
+
+<p>There is <strong>no banner ad</strong> and <strong>no ad when the app opens</strong>. Tessera
+runs straight from one board to the next with no menu screen, so there is nowhere a banner could
+sit without covering the puzzle you are playing.</p>
+
+<p>Google’s handling of advertising data is described in its own policies:</p>
+<ul>
+  <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob and data collection</a></li>
+</ul>
+
+<h2>4. Your choices about ads</h2>
+<ul>
+  <li><strong>In the EEA, the UK and Switzerland</strong> the Game shows Google’s official
+      consent form before requesting personalised ads, and you can reopen it at any time from
+      the <strong>?</strong> menu to change your answer.</li>
+  <li><strong>On Android</strong>, your device has an advertising-ID control in its own
+      settings — <em>Settings → Privacy → Ads</em> — where you can reset the identifier or turn
+      off ad personalisation for every app at once, Tessera included.</li>
+  <li><strong>On iPhone</strong>, Tessera asks once, through Apple’s App Tracking Transparency
+      prompt, whether ads may use your device’s advertising identifier. If you say no, ads are not
+      personalised and the Game works exactly the same. You can change this any time in
+      <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+</ul>
+
+<h3>The VIP purchase (iPhone)</h3>
+<p>On iPhone, Tessera offers one optional one-time purchase, <strong>VIP</strong>: no ads
+between levels and three free level skips a day. Payment is handled entirely by Apple through
+the App Store; we never see your card, Apple ID or any payment details. The Game only learns
+whether VIP has been bought, so it can turn the ads off, and keeps that on your device.
+<strong>Restore purchases</strong> (in the <strong>?</strong> menu) brings VIP back on a new or
+reset device.</p>
+
+<h2>5. Permissions</h2>
+<p>Tessera asks for no permission to your camera, microphone, location, contacts, photos or
+files. It does need network access, because ads have to be fetched. Every permission below
+arrives with Google’s Mobile Ads SDK rather than with the game’s own code, but they ship in the
+app, so here they are in full:</p>
+<table>
+  <tr><th>Permission</th><th>What it is for</th></tr>
+  <tr><td><code>INTERNET</code></td><td>Fetching ads. No gameplay feature uses the network</td></tr>
+  <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Checking whether there is a connection before asking for an ad</td></tr>
+  <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>The advertising identifier</td></tr>
+  <tr><td><code>ACCESS_ADSERVICES_AD_ID</code></td><td>Android’s Privacy Sandbox advertising-ID API</td></tr>
+  <tr><td><code>ACCESS_ADSERVICES_ATTRIBUTION</code></td><td>Privacy Sandbox ad attribution (measuring whether an ad led to an install)</td></tr>
+  <tr><td><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Privacy Sandbox Topics — interest signals used for ad relevance</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>WAKE_LOCK</code></td><td>Declared by Google Play Services components the Ads SDK depends on</td></tr>
+</table>
+<p>The build also contains <code>com.zengothic.tessera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>,
+which is easy to misread. It is defined by the app, for the app — note it carries Tessera’s own
+package name rather than <code>android.permission.*</code>. Its protection level is
+<code>signature</code>, so only code signed with the same key can hold it. Android’s own AndroidX
+libraries add it automatically; it requests no capability, accesses no data, and is never shown
+to you as a prompt. It makes the app more locked down, not less.</p>
+
+<h2>6. Children</h2>
+<p>Tessera has no chat and no user-generated content, its one purchase is optional, and the puzzle itself is
+suitable for any age. It <strong>does</strong> carry third-party advertising, so it is not
+directed at children and is not enrolled in Google Play’s Families programme.</p>
+
+<h2>7. Deleting your data</h2>
+<p>Everything Tessera itself stores is on your device. You can erase all of it at any time: open
+the <strong>?</strong> button in the game and choose <strong>Reset progress</strong>, or
+uninstall the app, which removes the stored data with it.</p>
+<p>We hold nothing about you on any server, so there is nothing for us to delete on your behalf.
+Data held by Google in connection with advertising is governed by Google’s policy linked above,
+and by your device’s advertising-ID controls.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the updated version will be published at this address and the date at
+the top will change.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy: <a href="mailto:zengothic01@gmail.com">zengothic01@gmail.com</a></p>
+
+</body>
+</html>
